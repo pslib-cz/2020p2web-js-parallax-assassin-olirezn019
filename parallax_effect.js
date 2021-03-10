@@ -6,7 +6,6 @@ const container = document.getElementsByClassName("parallax-container")[0];
 
 window.onscroll = (e) => {
     if (window.scrollY <= container.offsetHeight){
-        console.log(window.scrollY)
         layer4.style.transform = "translateY(-"+window.scrollY+"px)";
         layer3.style.transform = "translateY(-"+window.scrollY+"px) translateX(-"+window.scrollY/2+"px)";
         layer2.style.transform = "translateY(-"+window.scrollY/2+"px)";
